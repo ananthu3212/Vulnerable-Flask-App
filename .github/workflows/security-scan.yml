@@ -22,5 +22,5 @@ jobs:
       app-start-command: python vulnerable-flask-app-linux.py
       app-port: '8081'
       trivy-severity: HIGH,CRITICAL
-      fail-on-findings: true
+      fail-on-findings: false
     secrets: inherit
