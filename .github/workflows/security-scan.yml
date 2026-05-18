@@ -18,15 +18,9 @@ jobs:
       docker-image-name: vulnerable-flask-app
       semgrep-config: p/python
       enable-flask-rules: true
-      trivy-severity: HIGH,CRITICAL
-      fail-on-findings: false
-      secrets: inherit
-      docker-image-name: vulnerable-flask-app
-      semgrep-config: p/python
-      enable-flask-rules: true
       enable-dast: true
       app-start-command: python vulnerable-flask-app-linux.py
       app-port: '8081'
       trivy-severity: HIGH,CRITICAL
       fail-on-findings: false
-
+    secrets: inherit
